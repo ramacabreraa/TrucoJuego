@@ -25,7 +25,8 @@ public class PantallaInicial implements Screen {
 	@Override
 	public void render(float delta) {
 		if(Gdx.input.isKeyPressed(Keys.SPACE)) {
-			Render.app.setScreen(new MenuPrincipal());
+			//Render.app.setScreen(new MenuPrincipal());
+			Render.app.setScreen(new IngresarNombre());
 		}
 		Render.limpiarPantalla(0, 0, 0, 1);
 		
@@ -58,7 +59,8 @@ public class PantallaInicial implements Screen {
 		}
 		inicial.setTransparencia(transparencia);
 		if(completo) {
-			Render.app.setScreen(new MenuPrincipal());
+		//	Render.app.setScreen(new MenuPrincipal());
+			Render.app.setScreen(new IngresarNombre());
 		}		
 	}
 
